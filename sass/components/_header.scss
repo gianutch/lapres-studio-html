@@ -1,0 +1,24 @@
+header {
+	.header-logo {
+		z-index: 100;
+		position: fixed;
+		top: 32px;
+		right: 64px;
+	}
+
+	.header-insta {
+		z-index: 1;
+		position: fixed;
+		bottom: 32px;
+	}
+
+	/* RESPONSIVE ============================================================ */
+
+	//tablet
+	@media (max-width: 999px) {
+	}
+
+	//phone
+	@media (max-width: 499px) {
+	}
+}

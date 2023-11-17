@@ -1,0 +1,36 @@
+.slide {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	p.info {
+		position: relative;
+		vertical-align: middle;
+		bottom: 64px;
+		left: 32px;
+	}
+}
+.slide#one {
+	background-image: url("../assets/images/khaite2022-mp4bg.jpg");
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #000000;
+}
+
+/* RESPONSIVE ============================================================ */
+
+//tablet
+@media (min-width: 500px) {
+}
+
+//laptop
+@media (min-height: 1000px) {
+}
+
+// /#home
