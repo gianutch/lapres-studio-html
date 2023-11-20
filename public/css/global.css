@@ -1582,21 +1582,14 @@ nav ul.nav-small li svg.icon.icon-mini {
   margin-left: 8px;
 }
 
-header {
-  /* RESPONSIVE ============================================================ */
-}
 header .header-logo {
   z-index: 100;
   position: fixed;
   top: 32px;
   right: 48px;
 }
-header .header-insta {
-  z-index: 1;
-  position: fixed;
-  bottom: 32px;
-  right: 48px;
-}
+
+/* RESPONSIVE ============================================================ */
 .slide {
   height: 100vh;
   width: 100%;
@@ -1616,11 +1609,13 @@ header .header-insta {
 
 .slide#one {
   background-image: url("../assets/images/khaite2022-mp4bg.jpg");
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #000000;
+}
+
+.slide#about .link-insta {
+  z-index: 1;
+  position: fixed;
+  bottom: 32px;
+  right: 48px;
 }
 
 /* RESPONSIVE ============================================================ */

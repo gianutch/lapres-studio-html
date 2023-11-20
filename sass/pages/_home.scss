@@ -16,11 +16,14 @@
 }
 .slide#one {
 	background-image: url("../assets/images/khaite2022-mp4bg.jpg");
-	background-size: cover;
-	background-attachment: scroll;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #000000;
+}
+.slide#about {
+	.link-insta {
+		z-index: 1;
+		position: fixed;
+		bottom: 32px;
+		right: 48px;
+	}
 }
 
 /* RESPONSIVE ============================================================ */
@@ -32,5 +35,3 @@
 //laptop
 @media (min-height: 1000px) {
 }
-
-// /#home

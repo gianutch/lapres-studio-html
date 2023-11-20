@@ -5,16 +5,10 @@ header {
 		top: 32px;
 		right: 48px;
 	}
+}
 
-	.header-insta {
-		z-index: 1;
-		position: fixed;
-		bottom: 32px;
-		right: 48px;
-	}
-
-	/* RESPONSIVE ============================================================ */
-
+/* RESPONSIVE ============================================================ */
+header {
 	//tablet
 	@media (max-width: 999px) {
 	}
