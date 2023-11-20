@@ -423,7 +423,7 @@ th {
   font-family: "Forum";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("/public/assets/fonts/Forum-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: local(""), url("../assets/fonts/Forum-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 /* VARIABLES ============================================================ */
 /* BASE ============================================================ */
