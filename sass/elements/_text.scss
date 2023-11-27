@@ -1,13 +1,5 @@
-/* source-sans-pro-regular - latin */
-@font-face {
-	font-family: "Forum";
-	font-style: normal;
-	font-weight: 400;
-	src: local(""), url("../assets/fonts/Forum-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
-}
-
 /* VARIABLES ============================================================ */
-$text-primary: "Forum", serif;
+$text-primary: "Nunito Sans", sans-serif;
 $text-secondary: Courier, monospace;
 
 /* BASE ============================================================ */
@@ -15,7 +7,7 @@ html,
 body {
 	color: $color-base;
 	font-family: $text-primary;
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: $b32;
 	text-transform: none;
@@ -72,8 +64,8 @@ p,
 legend,
 label.radio,
 label.checkbox {
-	font-size: 20px;
-	line-height: $b32;
+	font-size: 16px;
+	line-height: $b24;
 	margin-bottom: $b16;
 }
 

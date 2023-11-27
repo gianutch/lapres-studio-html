@@ -1,12 +1,7 @@
 /* VARIABLES ============================================================ */
 //primary   HSB(260, 60, 100);
-$color-primary: #9966ff; //theme
-$color-primary--hover: #8257d9; //theme
-$color-primary--gradient: linear-gradient(
-	135deg,
-	rgb(102, 153, 255),
-	rgb(179, 102, 255)
-);
+$color-primary: rgb(26, 26, 26); //theme
+$color-primary--hover: rgb(52, 52, 52); //theme
 
 //messaging
 $color-success: #52cc8f;
@@ -17,9 +12,9 @@ $color-info: #5cace6;
 $color-info--hover: #4d8fbf;
 
 //base
-$color-base: #555555; //theme
-$color-base--064: rgba(85, 85, 85, 0.64); //theme
-$color-base--012: rgba(85, 85, 85, 0.12); //theme
+$color-base: rgb(26, 26, 26); //theme
+$color-base--064: rgba(26, 26, 26, 0.64); //theme
+$color-base--012: rgba(26, 26, 26, 0.12); //theme
 $color-theme: #ffffff; //theme
 $color-theme--096: rgba(255, 255, 255, 0.96); //theme
 

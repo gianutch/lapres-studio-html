@@ -384,11 +384,11 @@ th {
 /* VARIABLES ============================================================ */
 /* CLASSES GENERAL ============================================================ */
 .color-base {
-  color: #555555;
+  color: rgb(26, 26, 26);
 }
 
 .color-base--064 {
-  color: rgba(85, 85, 85, 0.64);
+  color: rgba(26, 26, 26, 0.64);
 }
 
 .color-danger {
@@ -418,20 +418,13 @@ th {
   background-color: rgb(0, 0, 0);
 }
 
-/* source-sans-pro-regular - latin */
-@font-face {
-  font-family: "Forum";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../assets/fonts/Forum-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
-}
 /* VARIABLES ============================================================ */
 /* BASE ============================================================ */
 html,
 body {
-  color: #555555;
-  font-family: "Forum", serif;
-  font-size: 20px;
+  color: rgb(26, 26, 26);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
   font-weight: 400;
   line-height: 32px;
   text-transform: none;
@@ -488,8 +481,8 @@ p,
 legend,
 label.radio,
 label.checkbox {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 16px;
 }
 
@@ -516,12 +509,12 @@ a.link.link-mini {
 /* CLASSES ============================================================ */
 ::selection {
   color: #ffffff;
-  background: #8257d9;
+  background: rgb(52, 52, 52);
 }
 
 ::-moz-selection {
   color: #ffffff;
-  background: #8257d9;
+  background: rgb(52, 52, 52);
 }
 
 .text-secondary {
@@ -1005,7 +998,7 @@ p {
 html,
 body {
   box-sizing: border-box;
-  color: #555555;
+  color: rgb(26, 26, 26);
   background-color: #ffffff;
 }
 
@@ -1070,7 +1063,7 @@ code {
   display: block;
   white-space: nowrap;
   overflow: auto;
-  background-color: rgba(85, 85, 85, 0.12);
+  background-color: rgba(26, 26, 26, 0.12);
 }
 
 /* CLASSES ============================================================ */
@@ -1081,7 +1074,7 @@ code .class {
   color: #5cace6;
 }
 code .comment {
-  color: rgba(85, 85, 85, 0.64);
+  color: rgba(26, 26, 26, 0.64);
 }
 
 .smoothscroll {
@@ -1155,58 +1148,58 @@ code .comment {
 
 /* STYLES ============================================================ */
 .button.button-primary {
-  background-color: #9966ff;
+  background-color: rgb(26, 26, 26);
 }
 .button.button-primary:hover:enabled {
-  background-color: #8257d9;
+  background-color: rgb(52, 52, 52);
 }
 
 .button.button-base {
-  color: #555555;
-  background-color: rgba(85, 85, 85, 0.12);
+  color: rgb(26, 26, 26);
+  background-color: rgba(26, 26, 26, 0.12);
 }
 .button.button-base:hover:enabled {
-  color: #8257d9;
-  background-color: rgba(85, 85, 85, 0.12);
+  color: rgb(52, 52, 52);
+  background-color: rgba(26, 26, 26, 0.12);
 }
 .button.button-base:hover:enabled svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 .button.button-base svg.icon path {
-  fill: #555555;
+  fill: rgb(26, 26, 26);
 }
 
 .button.button-primary--ghost {
-  color: #9966ff;
-  border: 1px solid #9966ff;
+  color: rgb(26, 26, 26);
+  border: 1px solid rgb(26, 26, 26);
   background-color: transparent;
 }
 .button.button-primary--ghost:hover:enabled {
-  color: #8257d9;
-  border: 1px solid #8257d9;
+  color: rgb(52, 52, 52);
+  border: 1px solid rgb(52, 52, 52);
 }
 .button.button-primary--ghost:hover:enabled svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 .button.button-primary--ghost svg.icon path {
-  fill: #9966ff;
+  fill: rgb(26, 26, 26);
 }
 
 .button.button-base--ghost {
-  color: #555555;
-  border: 1px solid #555555;
+  color: rgb(26, 26, 26);
+  border: 1px solid rgb(26, 26, 26);
   background-color: transparent;
 }
 .button.button-base--ghost:hover:enabled {
-  color: #8257d9;
-  border: 1px solid #8257d9;
-  background-color: rgba(85, 85, 85, 0.12);
+  color: rgb(52, 52, 52);
+  border: 1px solid rgb(52, 52, 52);
+  background-color: rgba(26, 26, 26, 0.12);
 }
 .button.button-base--ghost:hover:enabled svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 .button.button-base--ghost svg.icon path {
-  fill: #555555;
+  fill: rgb(26, 26, 26);
 }
 
 .button.button-white--ghost {
@@ -1215,12 +1208,12 @@ code .comment {
   background-color: transparent;
 }
 .button.button-white--ghost:hover:enabled {
-  color: #8257d9;
-  border: 1px solid #8257d9;
+  color: rgb(52, 52, 52);
+  border: 1px solid rgb(52, 52, 52);
   background-color: rgba(255, 255, 255, 0.12);
 }
 .button.button-white--ghost:hover:enabled svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 
 .button.button-success {
@@ -1296,12 +1289,12 @@ code .comment {
 
 .button.button-active {
   color: white !important;
-  background-color: #9966ff !important;
+  background-color: rgb(26, 26, 26) !important;
   border: 1px solid transparent;
 }
 .button.button-active:hover:enabled {
   color: white;
-  background-color: #8257d9 !important;
+  background-color: rgb(52, 52, 52) !important;
 }
 .button.button-active:hover:enabled svg.icon path {
   fill: white !important;
@@ -1333,36 +1326,36 @@ code .comment {
 /* link-style */
 .link.link-primary,
 .link.link-primary span {
-  color: #9966ff;
+  color: rgb(26, 26, 26);
 }
 .link.link-primary:hover,
 .link.link-primary span:hover {
-  color: #8257d9;
+  color: rgb(52, 52, 52);
 }
 .link.link-primary:hover svg.icon path,
 .link.link-primary span:hover svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 .link.link-primary svg.icon path,
 .link.link-primary span svg.icon path {
-  fill: #9966ff;
+  fill: rgb(26, 26, 26);
 }
 
 .link.link-base,
 .link.link-base span {
-  color: #555555;
+  color: rgb(26, 26, 26);
 }
 .link.link-base:hover,
 .link.link-base span:hover {
-  color: #8257d9;
+  color: rgb(52, 52, 52);
 }
 .link.link-base:hover svg.icon path,
 .link.link-base span:hover svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 .link.link-base svg.icon path,
 .link.link-base span svg.icon path {
-  fill: #555555;
+  fill: rgb(26, 26, 26);
 }
 
 .link.link-theme,
@@ -1371,11 +1364,11 @@ code .comment {
 }
 .link.link-theme:hover,
 .link.link-theme span:hover {
-  color: #8257d9;
+  color: rgb(52, 52, 52);
 }
 .link.link-theme:hover svg.icon path,
 .link.link-theme span:hover svg.icon path {
-  fill: #8257d9;
+  fill: rgb(52, 52, 52);
 }
 .link.link-theme svg.icon path,
 .link.link-theme span svg.icon path {
@@ -1388,11 +1381,11 @@ code .comment {
 }
 .link.link-white:hover,
 .link.link-white span:hover {
-  color: #8257d9;
+  color: white;
 }
 .link.link-white:hover svg.icon path,
 .link.link-white span:hover svg.icon path {
-  fill: #8257d9;
+  fill: white;
 }
 .link.link-white svg.icon path,
 .link.link-white span svg.icon path {
@@ -1418,19 +1411,19 @@ code .comment {
 
 .link.link-active,
 .link.link-active span {
-  color: #9966ff !important;
+  color: rgb(26, 26, 26) !important;
 }
 .link.link-active:hover,
 .link.link-active span:hover {
-  color: #8257d9 !important;
+  color: rgb(52, 52, 52) !important;
 }
 .link.link-active:hover svg.icon path,
 .link.link-active span:hover svg.icon path {
-  fill: #8257d9 !important;
+  fill: rgb(52, 52, 52) !important;
 }
 .link.link-active svg.icon path,
 .link.link-active span svg.icon path {
-  fill: #9966ff !important;
+  fill: rgb(26, 26, 26) !important;
 }
 
 /* BASE ============================================================ */
@@ -1449,19 +1442,19 @@ svg.icon:active {
 }
 
 /* STYLES ============================================================ */
-svg.icon.icon-primary path {
-  fill: #9966ff;
+svg.icon.color-primary path {
+  fill: rgb(26, 26, 26);
 }
 
-svg.icon.icon-base path {
-  fill: #555555;
+svg.icon.color-base path {
+  fill: rgb(26, 26, 26);
 }
 
-svg.icon.icon-theme path {
+svg.icon.color-theme path {
   fill: #ffffff;
 }
 
-svg.icon.icon-white path {
+svg.icon.color-white path {
   fill: white;
 }
 
@@ -1501,7 +1494,7 @@ nav ul.nav-horizontal li button {
 }
 nav ul.nav-horizontal li.nav-dropdown:hover .link-dropdown,
 nav ul.nav-horizontal li.nav-dropdown:hover .link-dropdown span {
-  color: #8257d9;
+  color: rgb(52, 52, 52);
   text-decoration: none;
 }
 nav ul.nav-horizontal ul.nav-dropdown-content {
@@ -1525,7 +1518,7 @@ nav ul.nav-horizontal ul.nav-dropdown-content a {
   display: block;
 }
 nav ul.nav-horizontal ul.nav-dropdown-content a:hover {
-  background-color: rgba(85, 85, 85, 0.12);
+  background-color: rgba(26, 26, 26, 0.12);
 }
 
 nav ul.nav-horizontal.nav-small li {
@@ -1582,10 +1575,20 @@ nav ul.nav-small li svg.icon.icon-mini {
   margin-left: 8px;
 }
 
+header {
+  z-index: 100;
+  position: relative;
+}
 header .header-logo {
   z-index: 100;
   position: fixed;
   top: 32px;
+  right: 48px;
+}
+header .header-about {
+  z-index: 100;
+  position: fixed;
+  top: 90%;
   right: 48px;
 }
 
@@ -1593,6 +1596,7 @@ header .header-logo {
 .slide {
   height: 100vh;
   width: 100%;
+  position: relative;
   overflow: hidden;
   background-size: cover;
   background-attachment: scroll;
@@ -1600,22 +1604,41 @@ header .header-logo {
   background-repeat: no-repeat;
   background-color: #000000;
 }
-.slide p.info {
-  position: relative;
+.slide .info {
+  position: absolute;
   vertical-align: middle;
-  bottom: 64px;
+  bottom: 24px;
   left: 32px;
+}
+.slide .info p {
+  color: white;
 }
 
 .slide#one {
   background-image: url("../assets/images/khaite2022-mp4bg.jpg");
 }
 
-.slide#about .link-insta {
-  z-index: 1;
-  position: fixed;
-  bottom: 32px;
-  right: 48px;
+.slide#two {
+  background-image: url("../assets/images/khaite2022-2.jpg");
+}
+
+.slide#three {
+  background-image: url("../assets/images/khaite2022-3.jpg");
+}
+
+.slide#four {
+  background-image: url("../assets/images/zaraman-1.jpg");
+}
+
+.slide#about {
+  background-image: url("../assets/images/zara-2.jpg");
+}
+.slide#about .info {
+  bottom: 24px;
+}
+.slide#about .info p {
+  color: rgb(26, 26, 26);
+  max-width: 50%;
 }
 
 /* RESPONSIVE ============================================================ */

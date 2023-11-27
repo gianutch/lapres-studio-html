@@ -1,28 +1,43 @@
 .slide {
 	height: 100vh;
 	width: 100%;
+	position: relative;
 	overflow: hidden;
 	background-size: cover;
 	background-attachment: scroll;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #000000;
-	p.info {
-		position: relative;
+	.info {
+		position: absolute;
 		vertical-align: middle;
-		bottom: 64px;
+		bottom: 24px;
 		left: 32px;
+		p {
+			color: white;
+		}
 	}
 }
 .slide#one {
 	background-image: url("../assets/images/khaite2022-mp4bg.jpg");
 }
+.slide#two {
+	background-image: url("../assets/images/khaite2022-2.jpg");
+}
+.slide#three {
+	background-image: url("../assets/images/khaite2022-3.jpg");
+}
+.slide#four {
+	background-image: url("../assets/images/zaraman-1.jpg");
+}
 .slide#about {
-	.link-insta {
-		z-index: 1;
-		position: fixed;
-		bottom: 32px;
-		right: 48px;
+	background-image: url("../assets/images/zara-2.jpg");
+	.info {
+		bottom: 24px;
+		p {
+			color: $color-base;
+			max-width: 50%;
+		}
 	}
 }
 
