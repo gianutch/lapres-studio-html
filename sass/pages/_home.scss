@@ -36,9 +36,16 @@
 		bottom: 24px;
 		p {
 			color: $color-base;
-			max-width: 50%;
+			max-width: 66%;
 		}
 	}
+}
+.link-insta a {
+	z-index: 1;
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	margin: -10px;
 }
 
 /* RESPONSIVE ============================================================ */
