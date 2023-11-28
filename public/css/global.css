@@ -1579,23 +1579,24 @@ nav ul.nav-small li svg.icon.icon-mini {
   margin-left: 8px;
 }
 
-h1 {
-  font-size: 33px;
-  line-height: 40px;
-  margin-bottom: 0;
-}
-h1 a.link.link-white.header-logo:hover {
-  text-decoration: none;
-}
-h1 a.link.link-white.header-logo span:hover {
-  text-decoration: none;
-}
-
 .header-logo {
   z-index: 1;
   position: fixed;
   top: 32px;
   right: 48px;
+}
+.header-logo h1 {
+  font-size: 33px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+.header-logo h1 a.link:hover,
+.header-logo h1 a.link span:hover {
+  text-decoration: none !important;
+}
+.header-logo h1 a.link:active,
+.header-logo h1 a.link span:active {
+  text-decoration: none !important;
 }
 
 .header-about {
