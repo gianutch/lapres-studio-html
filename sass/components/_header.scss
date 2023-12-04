@@ -26,15 +26,28 @@
 	position: fixed;
 	bottom: 24px;
 	right: 48px;
+	p {
+		margin-bottom: 0;
+	}
 }
 
 /* RESPONSIVE ============================================================ */
-header {
-	//tablet
-	@media (max-width: 999px) {
+//phone
+@media (max-width: 499px) {
+	.header-logo {
+		top: 24px;
+		right: 32px;
+		h1 {
+			font-size: 27px;
+			line-height: 32px;
+		}
 	}
+	.header-about {
+		bottom: 16px;
+		right: 32px;
+	}
+}
 
-	//phone
-	@media (max-width: 499px) {
-	}
+//tablet
+@media (max-width: 999px) {
 }

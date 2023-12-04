@@ -42,43 +42,53 @@
 		<meta property="og:image:height" content="630" />
 		<link
 			rel="icon"
-			type="image/png"
-			href="public/assets/images/index-favicon.png"
+			type="image"
 			sizes="16x16"
+			href="public/assets/images/index-favicon.png"
 		/>
 		<link
 			rel="icon"
-			type="image/png"
-			href="public/assets/images/index-favicon@2.png"
+			type="image"
 			sizes="32x32"
+			href="public/assets/images/index-favicon@2.png"
 		/>
 		<link
 			rel="icon"
-			type="image/png"
-			href="public/assets/images/index-favicon@3.png"
+			type="image"
 			sizes="48x48"
+			href="public/assets/images/index-favicon@3.png"
 		/>
 		<link
 			rel="icon"
-			type="image/png"
-			href="public/assets/images/index-favicon@6.png"
+			type="image"
 			sizes="96x96"
+			href="public/assets/images/index-favicon@6.png"
 		/>
 		<!-- preload (high priority, for now) -->
-		<link rel="preload" href="public/css/global.css" as="style" />
+		<link rel="preload" as="style" href="public/css/global.css" />
 		<!-- prefetch (low priority, for later) -->
+		<link
+			rel="prefetch"
+			as="image"
+			href="public/assets/images/khaite2022-hero1--mobile.jpg"
+		/>
+		<link
+			rel="prefetch"
+			as="image"
+			href="public/assets/images/khaite2022-hero1--desktop.jpg"
+		/>
 		<!-- <link
 			rel="prefetch"
-			href="public/assets/khaite2022-480p30.mp4"
 			as="video"
+			href="public/assets/khaite2022-480p30.mp4"
 		/> -->
 		<!-- load -->
 		<link rel="stylesheet" href="public/css/global.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Nunito+Sans:opsz@6..12&display=swap"
 			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Nunito+Sans:opsz@6..12&display=swap"
 		/>
 	</head>
 
@@ -86,7 +96,7 @@
 	<body>
 		<!-- HEADER ============================================================ -->
 		<div class="header-about setting-anim--fadeinup setting-anim--delayed">
-			<a href="#about" class="link link-white"><span>ABOUT</span></a>
+			<a href="#about" class="link link-white"><p>ABOUT</p></a>
 		</div>
 		<div class="header-logo setting-anim--fadeinup setting-anim--delayed">
 			<h1 class="text-secondary">
@@ -104,10 +114,11 @@
 			</h1>
 		</div>
 		<!-- <header class="setting-anim--fadeinup setting-anim--delayed"></header> -->
+
 		<!-- MAIN ============================================================ -->
 		<!-- ONE -->
 		<div class="slide" id="one">
-			<!-- <video
+			<video
 				autoplay
 				loop
 				muted
@@ -120,9 +131,10 @@
 					min-height: 100vh;
 				"
 			>
-				<source src="public/assets/videos/khaite2022-360p30.mp4" />
-			</video> -->
+				<source src="public/assets/videos/1-khaite--tablet30.mp4" />
+			</video>
 			<iframe
+				class="display-laptop display-desktop"
 				src="https://player.vimeo.com/video/665538734?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
 				frameborder="0"
 				allow="autoplay"
@@ -134,9 +146,9 @@
 				height="100%"
 				style="
 					width: 100vw;
-					height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+					height: 56.25vw; /* 16:9 -> 9/16*100 = 56.25 */
 					min-height: 100vh;
-					min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+					min-width: 177.77vh; /* 16:9 -> 16/9*100 = 177.77 */
 				"
 			></iframe>
 		</div>
@@ -145,7 +157,11 @@
 		<!-- TWO -->
 		<div class="slide" id="two">
 			<div class="info">
-				<p>KHAITE VIDEO EDITING</p>
+				<p>
+					KHAITE
+					<span class="display-phone" style="white-space: pre-line"></span
+					>VIDEO EDITING AND COLOR GRADING
+				</p>
 			</div>
 		</div>
 		<!-- /TWO -->
@@ -153,18 +169,124 @@
 		<!-- THREE -->
 		<div class="slide" id="three">
 			<div class="info">
-				<p>KHAITE VIDEO EDITING</p>
+				<p>
+					ZARA
+					<span class="display-phone" style="white-space: pre-line"></span
+					>RETOUCHING
+				</p>
 			</div>
 		</div>
 		<!-- /THREE -->
+		<!-- THREEBIS -->
+		<div class="slide display-phone display-tablet" id="threebis">
+			<div class="info">
+				<p>
+					ZARA
+					<span class="display-phone" style="white-space: pre-line"></span
+					>RETOUCHING
+				</p>
+			</div>
+		</div>
+		<!-- /THREEBIS -->
 
 		<!-- FOUR -->
 		<div class="slide" id="four">
+			<video
+				autoplay
+				loop
+				muted
+				playsinline
+				style="
+					position: relative;
+					right: 0;
+					bottom: 0;
+					min-width: 100%;
+					min-height: 100vh;
+				"
+			>
+				<source src="public/assets/videos/4-khaite--tablet30.mp4" />
+			</video>
+			<iframe
+				src="https://player.vimeo.com/video/717819006?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
+				frameborder="0"
+				allow="autoplay"
+				allow="fullscreen"
+				allowfullscreen
+				webkitallowfullscreen=""
+				mozallowfullscreen=""
+				width="100%"
+				height="100%"
+				style="
+					/* 16 x 9 */
+					width: 100vw;
+					height: 56.25vw; /* 16:9 -> 9/16*100 = 56.25 */
+					min-height: 100vh;
+					min-width: 177.77vh; /* 16:9 -> 16/9*100 = 177.77 */
+				"
+			></iframe>
 			<div class="info">
-				<p>ZARA MEN VIDEO EDITING</p>
+				<p>
+					KHAITE
+					<span class="display-phone" style="white-space: pre-line"></span
+					>VIDEO EDITING AND COLOR GRADING
+				</p>
 			</div>
 		</div>
 		<!-- /FOUR -->
+
+		<!-- FIVE -->
+		<!-- <div class="slide" id="five">
+			<div class="info">
+				<p>
+					ALEXANDER MCQUENN
+					<span class="display-phone" style="white-space: pre-line"></span
+					>RETOUCHING
+				</p>
+			</div>
+		</div> -->
+		<!-- /FIVE -->
+
+		<!-- SIX -->
+		<div class="slide" id="six">
+			<iframe
+				src="https://player.vimeo.com/video/862332682?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
+				frameborder="0"
+				allow="autoplay"
+				allow="fullscreen"
+				allowfullscreen
+				webkitallowfullscreen=""
+				mozallowfullscreen=""
+				width="100%"
+				height="100%"
+				style="
+					/* 640 x 474 */
+					width: 100vw;
+					height: 74.06vw; /* 640:474 -> 474/640*100 = 74.06 */
+					min-height: 100vh;
+					min-width: 135.02vh; /* 640:474 -> 640/474*100 = 135.02 */
+				"
+			></iframe>
+			<div class="info">
+				<p>
+					ZARA MAN
+					<span class="display-phone" style="white-space: pre-line"></span
+					>COLOR GRADING AND VFX
+				</p>
+			</div>
+		</div>
+		<!-- /SIX -->
+
+		<!-- SEVEN -->
+		<div class="slide" id="seven">
+			<div class="info">
+				<p>
+					KHAITE/BONPOINT
+					<span class="display-phone" style="white-space: pre-line"></span
+					>RETOUCHING
+				</p>
+			</div>
+		</div>
+		<!-- /SEVEN -->
 
 		<!-- ABOUT -->
 		<div class="slide" id="about">

@@ -8,35 +8,48 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #000000;
+	video {
+		display: none;
+	}
 	.info {
 		position: absolute;
 		vertical-align: middle;
 		bottom: 24px;
 		left: 32px;
+		max-width: 70%;
 		p {
+			display: inline-block;
+			margin-bottom: 0;
 			color: white;
 		}
 	}
 }
 .slide#one {
-	background-image: url("../assets/images/khaite2022-mp4bg.jpg");
+	background-image: url("../assets/images/1--desktop.jpg");
 }
 .slide#two {
-	background-image: url("../assets/images/khaite2022-2.jpg");
+	background-image: url("../assets/images/2--desktop.jpg");
 }
 .slide#three {
-	background-image: url("../assets/images/khaite2022-3.jpg");
+	background-image: url("../assets/images/3--desktop.jpg");
 }
 .slide#four {
-	background-image: url("../assets/images/zaraman-1.jpg");
+	background-image: url("../assets/images/4--desktop.jpg");
+}
+.slide#five {
+	background-image: url("../assets/images/5--desktop.jpg");
+}
+.slide#six {
+	background-image: url("../assets/images/6--desktop.jpg");
+}
+.slide#seven {
+	background-image: url("../assets/images/7--desktop.jpg");
 }
 .slide#about {
-	background-image: url("../assets/images/zara-2.jpg");
+	background-image: url("../assets/images/contact--desktop.jpg");
 	.info {
-		bottom: 24px;
 		p {
 			color: $color-base;
-			max-width: 66%;
 		}
 	}
 }
@@ -44,14 +57,103 @@
 	z-index: 1;
 	display: inline-block;
 	position: relative;
-	padding: 10px;
-	margin: -10px;
+	padding: 8px;
+	margin: -8px;
 }
 
 /* RESPONSIVE ============================================================ */
+//phone
+@media (max-width: 499px) {
+	.slide.display-phone {
+		display: block !important;
+	}
+	.slide {
+		video {
+			display: inline-block;
+		}
+		.info {
+			bottom: 16px;
+			left: 24px;
+		}
+	}
+	.slide#one {
+		background-image: url("../assets/images/1--mobile.jpg");
+	}
+	.slide#two {
+		background-image: url("../assets/images/2--mobile.jpg");
+	}
+	.slide#three {
+		background-image: url("../assets/images/3--mobile.jpg");
+	}
+	.slide#threebis {
+		background-image: url("../assets/images/3bis--mobile.jpg");
+	}
+	.slide#four {
+		background-image: url("../assets/images/4--mobile.jpg");
+	}
+	.slide#five {
+		background-image: url("../assets/images/5--mobile.jpg");
+	}
+	.slide#six {
+		background-image: url("../assets/images/6--mobile.jpg");
+	}
+	.slide#seven {
+		background-image: url("../assets/images/7--mobile.jpg");
+	}
+	.slide#about {
+		background-image: url("../assets/images/contact--mobile.jpg");
+		.info {
+			top: 48px;
+			left: 32px;
+		}
+	}
+}
 
 //tablet
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 999px) {
+	.slide.display-tablet {
+		display: block !important;
+	}
+	.slide {
+		video {
+			display: inline-block;
+		}
+		.info {
+			bottom: 16px;
+			left: 24px;
+		}
+	}
+	.slide#one {
+		background-image: url("../assets/images/1--tablet.jpg");
+	}
+	.slide#two {
+		background-image: url("../assets/images/2--tablet.jpg");
+	}
+	.slide#three {
+		background-image: url("../assets/images/3--tablet.jpg");
+	}
+	.slide#threebis {
+		background-image: url("../assets/images/3bis--tablet.jpg");
+	}
+	.slide#four {
+		background-image: url("../assets/images/4--tablet.jpg");
+	}
+	.slide#five {
+		background-image: url("../assets/images/5--tablet.jpg");
+	}
+	.slide#six {
+		background-image: url("../assets/images/6--tablet.jpg");
+	}
+	.slide#seven {
+		background-image: url("../assets/images/7--tablet.jpg");
+	}
+	.slide#about {
+		background-image: url("../assets/images/contact--tablet.jpg");
+		.info {
+			top: 48px;
+			left: 32px;
+		}
+	}
 }
 
 //laptop

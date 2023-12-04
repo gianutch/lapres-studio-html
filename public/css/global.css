@@ -1478,107 +1478,6 @@ svg.icon.icon-big {
   max-width: 30px;
 }
 
-/* BASE ============================================================ */
-nav ul.nav-horizontal {
-  text-align: left;
-}
-nav ul.nav-horizontal li {
-  display: inline-block;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-nav ul.nav-horizontal li:first-of-type {
-  margin-left: 0;
-}
-nav ul.nav-horizontal li:last-of-type {
-  margin-right: 0;
-}
-nav ul.nav-horizontal li button {
-  margin: 0;
-}
-nav ul.nav-horizontal li.nav-dropdown:hover .link-dropdown,
-nav ul.nav-horizontal li.nav-dropdown:hover .link-dropdown span {
-  color: rgb(52, 52, 52);
-  text-decoration: none;
-}
-nav ul.nav-horizontal ul.nav-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 160px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-  z-index: 2;
-  margin-left: -16px;
-  overflow: hidden;
-  overflow-y: auto;
-}
-nav ul.nav-horizontal ul.nav-dropdown-content li {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-nav ul.nav-horizontal ul.nav-dropdown-content a {
-  padding: 8px 16px;
-  display: block;
-}
-nav ul.nav-horizontal ul.nav-dropdown-content a:hover {
-  background-color: rgba(26, 26, 26, 0.12);
-}
-
-nav ul.nav-horizontal.nav-small li {
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-nav ul.nav-horizontal.nav-small li:first-of-type {
-  margin-left: 0;
-}
-nav ul.nav-horizontal.nav-small li:last-of-type {
-  margin-right: 0;
-}
-nav ul.nav-horizontal.nav-small li button {
-  margin: 0;
-}
-
-nav ul.nav-vertical {
-  text-align: left;
-}
-nav ul.nav-vertical li {
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-nav ul.nav-vertical li:first-of-type {
-  margin-top: 0;
-}
-nav ul.nav-vertical li:last-of-type {
-  margin-bottom: 0;
-}
-nav ul.nav-vertical li ul {
-  margin-left: 32px;
-}
-
-nav ul.nav-vertical.nav-small li {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-nav ul.nav-vertical.nav-small li ul {
-  margin-left: 24px;
-}
-
-nav ul li svg.icon.icon-mini {
-  margin-left: 12px;
-  vertical-align: middle;
-}
-nav ul.nav-small li svg.icon.icon-mini {
-  margin-left: 8px;
-}
-
 .header-logo {
   z-index: 1;
   position: fixed;
@@ -1605,8 +1504,25 @@ nav ul.nav-small li svg.icon.icon-mini {
   bottom: 24px;
   right: 48px;
 }
+.header-about p {
+  margin-bottom: 0;
+}
 
 /* RESPONSIVE ============================================================ */
+@media (max-width: 499px) {
+  .header-logo {
+    top: 24px;
+    right: 32px;
+  }
+  .header-logo h1 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .header-about {
+    bottom: 16px;
+    right: 32px;
+  }
+}
 .slide {
   height: 100vh;
   width: 100%;
@@ -1618,49 +1534,149 @@ nav ul.nav-small li svg.icon.icon-mini {
   background-repeat: no-repeat;
   background-color: #000000;
 }
+.slide video {
+  display: none;
+}
 .slide .info {
   position: absolute;
   vertical-align: middle;
   bottom: 24px;
   left: 32px;
+  max-width: 70%;
 }
 .slide .info p {
+  display: inline-block;
+  margin-bottom: 0;
   color: white;
 }
 
 .slide#one {
-  background-image: url("../assets/images/khaite2022-mp4bg.jpg");
+  background-image: url("../assets/images/1--desktop.jpg");
 }
 
 .slide#two {
-  background-image: url("../assets/images/khaite2022-2.jpg");
+  background-image: url("../assets/images/2--desktop.jpg");
 }
 
 .slide#three {
-  background-image: url("../assets/images/khaite2022-3.jpg");
+  background-image: url("../assets/images/3--desktop.jpg");
 }
 
 .slide#four {
-  background-image: url("../assets/images/zaraman-1.jpg");
+  background-image: url("../assets/images/4--desktop.jpg");
+}
+
+.slide#five {
+  background-image: url("../assets/images/5--desktop.jpg");
+}
+
+.slide#six {
+  background-image: url("../assets/images/6--desktop.jpg");
+}
+
+.slide#seven {
+  background-image: url("../assets/images/7--desktop.jpg");
 }
 
 .slide#about {
-  background-image: url("../assets/images/zara-2.jpg");
-}
-.slide#about .info {
-  bottom: 24px;
+  background-image: url("../assets/images/contact--desktop.jpg");
 }
 .slide#about .info p {
   color: rgb(26, 26, 26);
-  max-width: 66%;
 }
 
 .link-insta a {
   z-index: 1;
   display: inline-block;
   position: relative;
-  padding: 10px;
-  margin: -10px;
+  padding: 8px;
+  margin: -8px;
 }
 
 /* RESPONSIVE ============================================================ */
+@media (max-width: 499px) {
+  .slide.display-phone {
+    display: block !important;
+  }
+  .slide video {
+    display: inline-block;
+  }
+  .slide .info {
+    bottom: 16px;
+    left: 24px;
+  }
+  .slide#one {
+    background-image: url("../assets/images/1--mobile.jpg");
+  }
+  .slide#two {
+    background-image: url("../assets/images/2--mobile.jpg");
+  }
+  .slide#three {
+    background-image: url("../assets/images/3--mobile.jpg");
+  }
+  .slide#threebis {
+    background-image: url("../assets/images/3bis--mobile.jpg");
+  }
+  .slide#four {
+    background-image: url("../assets/images/4--mobile.jpg");
+  }
+  .slide#five {
+    background-image: url("../assets/images/5--mobile.jpg");
+  }
+  .slide#six {
+    background-image: url("../assets/images/6--mobile.jpg");
+  }
+  .slide#seven {
+    background-image: url("../assets/images/7--mobile.jpg");
+  }
+  .slide#about {
+    background-image: url("../assets/images/contact--mobile.jpg");
+  }
+  .slide#about .info {
+    top: 48px;
+    left: 32px;
+  }
+}
+@media (min-width: 500px) and (max-width: 999px) {
+  .slide.display-tablet {
+    display: block !important;
+  }
+  .slide video {
+    display: inline-block;
+  }
+  .slide .info {
+    bottom: 16px;
+    left: 24px;
+  }
+  .slide#one {
+    background-image: url("../assets/images/1--tablet.jpg");
+  }
+  .slide#two {
+    background-image: url("../assets/images/2--tablet.jpg");
+  }
+  .slide#three {
+    background-image: url("../assets/images/3--tablet.jpg");
+  }
+  .slide#threebis {
+    background-image: url("../assets/images/3bis--tablet.jpg");
+  }
+  .slide#four {
+    background-image: url("../assets/images/4--tablet.jpg");
+  }
+  .slide#five {
+    background-image: url("../assets/images/5--tablet.jpg");
+  }
+  .slide#six {
+    background-image: url("../assets/images/6--tablet.jpg");
+  }
+  .slide#seven {
+    background-image: url("../assets/images/7--tablet.jpg");
+  }
+  .slide#about {
+    background-image: url("../assets/images/contact--tablet.jpg");
+  }
+  .slide#about .info {
+    top: 48px;
+    left: 32px;
+  }
+}
