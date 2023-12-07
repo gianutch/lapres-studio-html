@@ -1015,6 +1015,11 @@ img {
   margin: auto;
 }
 
+video {
+  display: block;
+  margin: auto;
+}
+
 hr {
   height: 4px;
   width: 96px;
@@ -1534,8 +1539,13 @@ svg.icon.icon-big {
   background-repeat: no-repeat;
   background-color: #000000;
 }
+.slide .video--container {
+  display: flex;
+  justify-content: center;
+}
 .slide video {
-  display: none;
+  position: absolute;
+  height: 100vh;
 }
 .slide .info {
   position: absolute;
@@ -1569,6 +1579,9 @@ svg.icon.icon-big {
 .slide#five {
   background-image: url("../assets/images/5--desktop.jpg");
 }
+.slide#five .info p {
+  color: rgb(26, 26, 26);
+}
 
 .slide#six {
   background-image: url("../assets/images/6--desktop.jpg");
@@ -1595,15 +1608,12 @@ svg.icon.icon-big {
 
 /* RESPONSIVE ============================================================ */
 @media (max-width: 499px) {
-  .slide.display-phone {
-    display: block !important;
-  }
-  .slide video {
-    display: inline-block;
-  }
   .slide .info {
     bottom: 16px;
     left: 24px;
+  }
+  video {
+    height: 100vh !important;
   }
   .slide#one {
     background-image: url("../assets/images/1--tablet.jpg");
@@ -1621,7 +1631,7 @@ svg.icon.icon-big {
     background-image: url("../assets/images/4--tablet.jpg");
   }
   .slide#five {
-    background-image: url("../assets/images/5--tablet.jpg");
+    background-image: url("../assets/images/5--mobile.jpg");
   }
   .slide#six {
     background-image: url("../assets/images/6--tablet.jpg");
@@ -1638,15 +1648,12 @@ svg.icon.icon-big {
   }
 }
 @media (min-width: 500px) and (max-width: 999px) {
-  .slide.display-tablet {
-    display: block !important;
-  }
-  .slide video {
-    display: inline-block;
-  }
   .slide .info {
     bottom: 16px;
     left: 24px;
+  }
+  video {
+    height: 100vh !important;
   }
   .slide#one {
     background-image: url("../assets/images/1--tablet.jpg");

@@ -118,39 +118,44 @@
 		<!-- MAIN ============================================================ -->
 		<!-- ONE -->
 		<div class="slide" id="one">
-			<video
-				autoplay
-				loop
-				muted
-				playsinline
-				style="
-					position: relative;
-					right: 0;
-					bottom: 0;
-					min-width: 100%;
-					min-height: 100vh;
-				"
-			>
-				<source src="public/assets/videos/1-khaite--tablet30.mp4" />
-			</video>
-			<iframe
-				class="display-laptop display-desktop"
-				src="https://player.vimeo.com/video/665538734?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
-				frameborder="0"
-				allow="autoplay"
-				allow="fullscreen"
-				allowfullscreen
-				webkitallowfullscreen=""
-				mozallowfullscreen=""
-				width="100%"
-				height="100%"
-				style="
-					width: 100vw;
-					height: 56.25vw; /* 16:9 -> 9/16*100 = 56.25 */
-					min-height: 100vh;
-					min-width: 177.77vh; /* 16:9 -> 16/9*100 = 177.77 */
-				"
-			></iframe>
+			<div class="video--container">
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="display-phone display-tablet"
+				>
+					<source src="public/assets/videos/1-khaite--tablet30.mp4" />
+				</video>
+				<!-- <video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="display-laptop display-desktop"
+				>
+					<source src="public/assets/videos/1-khaite--desktop30.mp4" />
+				</video> -->
+				<iframe
+					class="display-laptop display-desktop"
+					src="https://player.vimeo.com/video/665538734?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
+					frameborder="0"
+					allow="autoplay"
+					allow="fullscreen"
+					allowfullscreen
+					webkitallowfullscreen=""
+					mozallowfullscreen=""
+					width="100%"
+					height="100%"
+					style="
+						width: 100vw;
+						height: 56.25vw; /* 16:9 -> 9/16*100 = 56.25 */
+						min-height: 100vh;
+						min-width: 177.77vh; /* 16:9 -> 16/9*100 = 177.77 */
+					"
+				></iframe>
+			</div>
 		</div>
 		<!-- /ONE -->
 
@@ -159,7 +164,10 @@
 			<div class="info">
 				<p>
 					KHAITE
-					<span class="display-phone" style="white-space: pre-line"></span
+					<span
+						class="display-phone display-tablet"
+						style="white-space: pre-line"
+					></span
 					>VIDEO EDITING AND COLOR GRADING
 				</p>
 			</div>
@@ -171,7 +179,10 @@
 			<div class="info">
 				<p>
 					ZARA
-					<span class="display-phone" style="white-space: pre-line"></span
+					<span
+						class="display-phone display-tablet"
+						style="white-space: pre-line"
+					></span
 					>RETOUCHING
 				</p>
 			</div>
@@ -191,43 +202,51 @@
 
 		<!-- FOUR -->
 		<div class="slide" id="four">
-			<video
-				autoplay
-				loop
-				muted
-				playsinline
-				style="
-					position: relative;
-					right: 0;
-					bottom: 0;
-					min-width: 100%;
-					min-height: 100vh;
-				"
-			>
-				<source src="public/assets/videos/4-khaite--tablet30.mp4" />
-			</video>
-			<iframe
-				src="https://player.vimeo.com/video/717819006?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
-				frameborder="0"
-				allow="autoplay"
-				allow="fullscreen"
-				allowfullscreen
-				webkitallowfullscreen=""
-				mozallowfullscreen=""
-				width="100%"
-				height="100%"
-				style="
-					/* 16 x 9 */
-					width: 100vw;
-					height: 56.25vw; /* 16:9 -> 9/16*100 = 56.25 */
-					min-height: 100vh;
-					min-width: 177.77vh; /* 16:9 -> 16/9*100 = 177.77 */
-				"
-			></iframe>
+			<div class="video--container">
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="display-phone display-tablet"
+				>
+					<source src="public/assets/videos/4-khaite--tablet30.mp4" />
+				</video>
+				<!-- <video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="display-laptop display-desktop"
+				>
+					<source src="public/assets/videos/4-khaite--desktop30.mp4" />
+				</video> -->
+				<iframe
+					src="https://player.vimeo.com/video/717819006?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
+					frameborder="0"
+					allow="autoplay"
+					allow="fullscreen"
+					allowfullscreen
+					webkitallowfullscreen=""
+					mozallowfullscreen=""
+					width="100%"
+					height="100%"
+					style="
+						/* 16 x 9 */
+						width: 100vw;
+						height: 56.25vw; /* 16:9 -> 9/16*100 = 56.25 */
+						min-height: 100vh;
+						min-width: 177.77vh; /* 16:9 -> 16/9*100 = 177.77 */
+					"
+				></iframe>
+			</div>
 			<div class="info">
 				<p>
 					KHAITE
-					<span class="display-phone" style="white-space: pre-line"></span
+					<span
+						class="display-phone display-tablet"
+						style="white-space: pre-line"
+					></span
 					>VIDEO EDITING AND COLOR GRADING
 				</p>
 			</div>
@@ -235,7 +254,7 @@
 		<!-- /FOUR -->
 
 		<!-- FIVE -->
-		<!-- <div class="slide" id="five">
+		<div class="slide" id="five">
 			<div class="info">
 				<p>
 					ALEXANDER MCQUENN
@@ -243,48 +262,56 @@
 					>RETOUCHING
 				</p>
 			</div>
-		</div> -->
+		</div>
 		<!-- /FIVE -->
 
 		<!-- SIX -->
 		<div class="slide" id="six">
-			<video
-				autoplay
-				loop
-				muted
-				playsinline
-				style="
-					position: relative;
-					right: 0;
-					bottom: 0;
-					min-width: 100%;
-					min-height: 100vh;
-				"
-			>
-				<source src="public/assets/videos/6-zaraman--tablet30.mp4" />
-			</video>
-			<iframe
-				src="https://player.vimeo.com/video/862332682?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
-				frameborder="0"
-				allow="autoplay"
-				allow="fullscreen"
-				allowfullscreen
-				webkitallowfullscreen=""
-				mozallowfullscreen=""
-				width="100%"
-				height="100%"
-				style="
-					/* 640 x 474 */
-					width: 100vw;
-					height: 74.06vw; /* 640:474 -> 474/640*100 = 74.06 */
-					min-height: 100vh;
-					min-width: 135.02vh; /* 640:474 -> 640/474*100 = 135.02 */
-				"
-			></iframe>
+			<div class="video--container">
+				<video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="display-phone display-tablet"
+				>
+					<source src="public/assets/videos/6-zaraman--tablet30.mp4" />
+				</video>
+				<!-- <video
+					autoplay
+					loop
+					muted
+					playsinline
+					class="display-laptop display-desktop"
+				>
+					<source src="public/assets/videos/6-zaraman--desktop30.mp4" />
+				</video> -->
+				<iframe
+					src="https://player.vimeo.com/video/862332682?background=1&?autoplay=1&loop=1&autopause=0&?muted=1&?controls=0"
+					frameborder="0"
+					allow="autoplay"
+					allow="fullscreen"
+					allowfullscreen
+					webkitallowfullscreen=""
+					mozallowfullscreen=""
+					width="100%"
+					height="100%"
+					style="
+						/* 640 x 474 */
+						width: 100vw;
+						height: 74.06vw; /* 640:474 -> 474/640*100 = 74.06 */
+						min-height: 100vh;
+						min-width: 135.02vh; /* 640:474 -> 640/474*100 = 135.02 */
+					"
+				></iframe>
+			</div>
 			<div class="info">
 				<p>
 					ZARA MAN
-					<span class="display-phone" style="white-space: pre-line"></span
+					<span
+						class="display-phone display-tablet"
+						style="white-space: pre-line"
+					></span
 					>COLOR GRADING AND VFX
 				</p>
 			</div>
@@ -296,7 +323,10 @@
 			<div class="info">
 				<p>
 					KHAITE/BONPOINT
-					<span class="display-phone" style="white-space: pre-line"></span
+					<span
+						class="display-phone display-tablet"
+						style="white-space: pre-line"
+					></span
 					>RETOUCHING
 				</p>
 			</div>
