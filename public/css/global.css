@@ -1626,6 +1626,7 @@ svg.icon.icon-big {
   }
   .slide#threebis {
     background-image: url("../assets/images/3bis--mobile.jpg");
+    display: block !important;
   }
   .slide#four {
     background-image: url("../assets/images/4--tablet.jpg");
@@ -1666,6 +1667,7 @@ svg.icon.icon-big {
   }
   .slide#threebis {
     background-image: url("../assets/images/3bis--tablet.jpg");
+    display: block !important;
   }
   .slide#four {
     background-image: url("../assets/images/4--tablet.jpg");
