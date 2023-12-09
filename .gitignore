@@ -2,17 +2,17 @@
 # node_modules
 # /dist
 
-# Local env files
-.env.local
-.env.*.local
+# LOCAL ENV FILES
+# .env.local
+# .env.*.local
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# LOG FILES
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# pnpm-debug.log*
 
-# Editor directories and files
+# EDITOR DIRECTORIES AND FILES
 .idea
 .vscode
 *.suo
@@ -21,7 +21,7 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# Media files
+# MEDIA FILES
 1-khaite--desktop30.mp4
 1-khaite--tablet30.mp4
 4-khaite--desktop30.mp4
