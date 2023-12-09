@@ -1545,7 +1545,6 @@ svg.icon.icon-big {
 }
 .slide video {
   position: absolute;
-  height: 100vh;
 }
 .slide .info {
   position: absolute;
@@ -1607,7 +1606,7 @@ svg.icon.icon-big {
 }
 
 /* RESPONSIVE ============================================================ */
-@media (max-width: 499px) and (min-height: 499px) {
+@media (max-width: 499px) {
   .slide .info {
     bottom: 16px;
     left: 24px;
@@ -1616,7 +1615,7 @@ svg.icon.icon-big {
     height: 100vh !important;
   }
   .slide#one {
-    background-image: url("../assets/images/1--desktopbg.jpg");
+    background-image: url("../assets/images/1--tablet.jpg");
   }
   .slide#two {
     background-image: url("../assets/images/2--tablet.jpg");
@@ -1648,16 +1647,10 @@ svg.icon.icon-big {
     left: 32px;
   }
 }
-@media (min-width: 500px) and (max-width: 999px) and (min-height: 499px) {
+@media (min-width: 500px) and (max-width: 999px) {
   .slide .info {
     bottom: 16px;
     left: 24px;
-  }
-  video {
-    height: 100vh !important;
-  }
-  .slide#one {
-    background-image: url("../assets/images/1--tablet.jpg");
   }
   .slide#two {
     background-image: url("../assets/images/2--tablet.jpg");
