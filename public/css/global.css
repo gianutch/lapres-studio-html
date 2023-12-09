@@ -1622,17 +1622,17 @@ svg.icon.icon-big {
     background-image: url("../assets/images/2--tablet.jpg");
   }
   .slide#three {
-    background-image: url("../assets/images/3--mobile.jpg");
+    background-image: url("../assets/images/3--phone.jpg");
   }
   .slide#threebis {
-    background-image: url("../assets/images/3bis--mobile.jpg");
+    background-image: url("../assets/images/3bis--phone.jpg");
     display: block !important;
   }
   .slide#four {
     background-image: url("../assets/images/4--tablet.jpg");
   }
   .slide#five {
-    background-image: url("../assets/images/5--mobile.jpg");
+    background-image: url("../assets/images/5--phone.jpg");
   }
   .slide#six {
     background-image: url("../assets/images/6--tablet.jpg");
@@ -1641,7 +1641,7 @@ svg.icon.icon-big {
     background-image: url("../assets/images/7--tablet.jpg");
   }
   .slide#about {
-    background-image: url("../assets/images/contact--mobile.jpg");
+    background-image: url("../assets/images/contact--phone.jpg");
   }
   .slide#about .info {
     top: 48px;
