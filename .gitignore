@@ -3,14 +3,14 @@
 # /dist
 
 # Local env files
-.env.local
-.env.*.local
+# .env.local
+# .env.*.local
 
 # Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# pnpm-debug.log*
 
 # Editor directories and files
 .idea
@@ -23,5 +23,8 @@ pnpm-debug.log*
 
 # Media files
 1-khaite--desktop30.mp4
+1-khaite--tablet30.mp4
 4-khaite--desktop30.mp4
+4-khaite--tablet3030.mp4
 6-zaraman--desktop30.mp4
+6-zaraman--tablet30.mp4
