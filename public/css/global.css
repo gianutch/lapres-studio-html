@@ -1683,6 +1683,12 @@ svg.icon.icon-big {
     bottom: 16px;
     left: 24px;
   }
+  video {
+    height: 100vh !important;
+  }
+  .slide#one {
+    background-image: url("../assets/images/1--tablet.jpg");
+  }
   .slide#two {
     background-image: url("../assets/images/2--tablet.jpg");
   }
