@@ -29,7 +29,7 @@
 		vertical-align: middle;
 		bottom: 30px;
 		left: 30px;
-		max-width: 60%;
+		max-width: 50%;
 		p {
 			display: inline-block;
 			margin-bottom: 0;
@@ -82,6 +82,9 @@
 /* RESPONSIVE ============================================================ */
 //phone
 @media (max-width: 499px) and (orientation: portrait) {
+	.slide {
+		max-width: 50%;
+	}
 	.slide#one {
 		background-image: url("../assets/images/1--tablet.jpg");
 		video {
@@ -117,7 +120,6 @@
 		background-image: url("../assets/images/contact--phone.jpg");
 		.info {
 			top: 30px;
-			max-width: 50%;
 		}
 	}
 }
